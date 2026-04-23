@@ -1,0 +1,8 @@
+streamlit
+streamlit-lottie
+requests
+torch
+torchvision
+transformers
+Pillow
+google-generativeai
