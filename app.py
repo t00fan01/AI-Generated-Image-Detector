@@ -10,7 +10,7 @@ from PIL import Image
 st.set_page_config(
     page_title="AI Generated Image Detector",
     page_icon="🔍",
-    layout="wide", # Using wide to allow elegant centered layout with columns
+    layout="wide", 
     initial_sidebar_state="expanded" 
 )
 
