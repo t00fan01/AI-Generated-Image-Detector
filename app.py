@@ -18,6 +18,9 @@ st.set_page_config(
 st.markdown("""
 <style>
     /* Styling to ensure a clean, professional look */
+    .stApp {
+        background-color: #0F172A;
+    }
     .hero-title {
         text-align: center;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -25,18 +28,19 @@ st.markdown("""
         font-weight: 700;
         margin-top: 50px;
         margin-bottom: 10px;
+        color: #FACC15; /* Vibrant Yellow */
     }
     .hero-sub {
         text-align: center;
         font-size: 1.2rem;
-        color: #555555;
+        color: #94A3B8; /* Slate gray-blue */
         margin-bottom: 40px;
     }
     .result-box {
-        background-color: #FAFAFA;
+        background-color: #1E293B; /* Lighter Dark Blue */
         padding: 20px;
         border-radius: 8px;
-        border: 1px solid #EEEEEE;
+        border: 1px solid #334155;
         margin-top: 20px;
         text-align: center;
     }
@@ -120,8 +124,13 @@ def get_dynamic_gemini_model():
 
 # --- UI COMPONENTS ---
 def sidebar_nav_auth():
-    # Placeholder Logo and Title
-    st.sidebar.markdown("<h2 style='text-align: center;'>🔍 AI Forensics</h2>", unsafe_allow_html=True)
+    # Load Logo dynamically
+    try:
+        # Attempt to load the user's logo file
+        st.sidebar.image("logo.png", use_container_width=True)
+    except Exception:
+        # Fallback if the logo file doesn't exist yet
+        st.sidebar.markdown("<h2 style='text-align: center; color: #FACC15;'>🔍 AI Forensics</h2>", unsafe_allow_html=True)
     st.sidebar.markdown("---")
     
     # Navigation
