@@ -330,8 +330,6 @@ def page_about():
     ### Technology Stack
     - **Frontend:** Streamlit
     - **Core Inference & Chatbot Integration:** Powered by Google's **Gemini 1.5 Flash** models to run live, in-browser analysis without relying on hardcoded mock data.
-    - **UI Theme:** A custom, clean, iLovePDF-inspired design focusing on white spacing and professional aesthetics.
-    """)
 
 # --- ROUTER ---
 def main():
