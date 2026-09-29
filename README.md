@@ -1,1 +1,2 @@
-Ai Generated image 
+Ai Generated image detector
+
